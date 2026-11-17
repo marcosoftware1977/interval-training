@@ -16,9 +16,13 @@ scheduleDiv.appendChild(div);
 
 document.getElementById('addBtn').addEventListener('click',()=>{
 const type=document.getElementById('type').value;
-const minutes=parseInt(document.getElementById('minutes').value);
+const minutes=parseFloat(
+    document.getElementById('minutes').value.replace(',', '.')
+);
 const speed=parseFloat(document.getElementById('speed').value);
-if(!minutes||!speed) return;
+if (isNaN(minutes) || minutes <= 0 || isNaN(speed) || speed <= 0) {
+    return;
+}
 schedule.push({type,minutes,speed});
 renderSchedule();
 });

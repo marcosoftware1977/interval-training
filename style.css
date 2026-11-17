@@ -1,0 +1,14 @@
+body {
+font-family: Arial,sans-serif;
+margin:0;
+padding:20px;
+transition: background 0.5s;
+}
+.walk-mode { background:#2e7d32; color:white; }
+.run-mode { background:#c62828; color:white; }
+.container { max-width:700px; margin:auto; }
+input,select,button { padding:10px; margin:5px; }
+button { cursor:pointer; }
+#schedule div { background:rgba(255,255,255,0.15); padding:8px; margin:5px 0; border-radius:6px; }
+#timer { font-size:4rem; font-weight:bold; margin-top:20px; }
+#currentActivity { font-size:2rem; margin-top:20px; }

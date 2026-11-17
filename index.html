@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interval Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="walk-mode">
+<div class="container">
+<h1>🏃 Interval Runner</h1>
+
+<div class="builder">
+<h2>Schema bouwen</h2>
+<select id="type">
+<option value="walk">Wandelen</option>
+<option value="run">Hardlopen</option>
+</select>
+<input type="number" id="minutes" min="1" placeholder="Minuten">
+<input type="number" id="speed" min="1" step="0.1" placeholder="Km/u">
+<button id="addBtn">Toevoegen</button>
+</div>
+
+<div id="schedule"></div>
+
+<div class="controls">
+<button id="startBtn">▶ Start</button>
+<button id="resetBtn">⏹ Reset</button>
+</div>
+
+<div id="currentActivity">Klaar om te starten</div>
+<div id="timer">00:00</div>
+<div id="speedDisplay"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
